@@ -29,27 +29,22 @@ class Repo
   end
 
   def commit
-    git_cmd do
-      `git add .`
-      `git commit -m 'foo'`
-    end
+    git_cmd('git add .')
+    git_cmd('git commit -m "foo"')
   end
 
   def push
-    git_cmd { `git push` }
+    git_cmd('git push')
   end
 
   def pull
-    git_cmd { `git pull origin master` }
+    git_cmd('git pull origin master')
   end
 
-  def git_cmd(&block)
+  def git_cmd(cmd)
     Dir.chdir(repo_dir)
-    $stdout.reopen('/dev/null', 'w')
-    yield
+    system(cmd)
     self
-  ensure
-    $stdout.reopen(STDOUT, 'w')
   end
 end
 
