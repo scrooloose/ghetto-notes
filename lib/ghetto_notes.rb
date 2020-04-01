@@ -19,7 +19,7 @@ module GhettoNotes
   end
 
   def self.bin_file
-    path = File.join(File.dirname(__FILE__), '..', 'bin', 'ghetto_notes.rb')
+    path = File.join(File.dirname(__FILE__), '..', 'exe', 'ghetto_notes')
     File.expand_path(path)
   end
 end
