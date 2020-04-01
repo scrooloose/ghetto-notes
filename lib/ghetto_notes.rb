@@ -1,6 +1,7 @@
 require_relative 'ghetto_notes/main'
 require_relative 'ghetto_notes/notes_directory'
 require_relative 'ghetto_notes/installer'
+require_relative 'ghetto_notes/version'
 
 module GhettoNotes
   USAGE = <<~EOS
