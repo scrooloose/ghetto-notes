@@ -1,3 +1,5 @@
+require 'tmpdir'
+
 class Repo
   attr_reader :repo_dir
 

@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    ghetto_notes (0.1.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -25,8 +30,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  pry
-  rspec
+  bundler (~> 1.16)
+  ghetto_notes!
+  pry (~> 0.13.0)
+  rspec (~> 3.9.0)
 
 BUNDLED WITH
    1.16.3
