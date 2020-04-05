@@ -36,7 +36,7 @@ module GhettoNotes
     end
 
     def set_from(fname)
-      `crontab #{new_crontab.path}`
+      `crontab #{fname}`
     end
   end
 end
